@@ -1,0 +1,91 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+    position: relative;
+  }
+  
+  .header__title {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .header__toggle {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header__item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  .header__bullet {
+    color: #333;
+    font-size: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .header__toggle {
+      display: block;
+    }
+  
+    .header__nav {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 10px;
+      display: none;
+    }
+  
+    .header__nav.header__nav--open {
+      display: flex;
+    }
+  
+    .header__menu {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .header__item {
+      width: 100%;
+      justify-content: flex-start;
+      padding: 10px 0;
+    }
+  
+    .header__bullet {
+      display: none;
+    }
+  }
+  
