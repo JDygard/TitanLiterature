@@ -1,6 +1,4 @@
 /* Footer.css */
-
-/* Footer container */
 .footer {
     background-color: var(--color-dark-green); /* Using the global color variables */
     color: white;
