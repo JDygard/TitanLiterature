@@ -9,9 +9,11 @@ const Home = () => (
   <>
     <Header />
     <main>
-      <BookDetails />
+      <div style={{display: "flex", flexDirection: "row"}}>
+        <Action />
+        <BookDetails />
+      </div>
       <AuthorInfo />
-      <Action />
     </main>
     <Footer />
   </>
