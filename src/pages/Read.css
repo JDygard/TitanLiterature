@@ -1,0 +1,25 @@
+.read-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.read-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.pdf-container {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+}
+
+.reading-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
