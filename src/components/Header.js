@@ -4,14 +4,15 @@ import "./Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
   const navigate = useNavigate();
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   const handleClick = (path) => {
     navigate(path);
+  };
+  
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
