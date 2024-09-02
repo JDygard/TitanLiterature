@@ -18,6 +18,10 @@ body {
   color: var(--color-dark-green);
 }
 
+span {
+  cursor:pointer;
+}
+
 a {
   color: var(--color-medium-green);
   text-decoration: none;

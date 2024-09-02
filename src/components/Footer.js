@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer__section footer__social">
           <h3>Social</h3>
           <ul>
-            <li className="header__item"><span onClick={() => handleClick('/home')}>Home</span></li> {/* In this call to the handleClick function */}
+            <li className="header__item"><span onClick={() => handleClick('/')}>Home</span></li> {/* In this call to the handleClick function */}
             <li className="header__item"><span className="header__bullet">•</span></li>
             <li className="header__item"><span onClick={() => handleClick('/about')}>About</span></li> {/* That thing in the parentheses gets passed to the function above */}
             <li className="header__item"><span className="header__bullet">•</span></li>
