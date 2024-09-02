@@ -21,6 +21,7 @@ const Header = () => {
         ☰
       </button>
       <a href="#home" className="header__link"><img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" /></a>
+      <span onClick={() => handleClick("/read")}>Read my book.</span>
       <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
         <ul className="header__menu">
           <li className="header__item"><span onClick={() => handleClick('/home')}>Home</span></li>
