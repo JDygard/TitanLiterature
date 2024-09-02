@@ -8,6 +8,17 @@
   --color-dark-green: #3a5a40;
   --color-darker-green: #344e41;
 }
+.hr-minimalist {
+  border: none;
+  height: 2px; /* Thickness of the line */
+  background-color: #ccc; /* Light grey color for subtlety */
+  margin: 40px 0; /* Spacing above and below the line */
+  width: 100%;
+  max-width: 80%; /* Optional: limits the width of the line */
+  margin-left: auto; /* Center the HR */
+  margin-right: auto; /* Center the HR */
+  border-radius: 1px; /* Slight rounding of edges */
+}
 
 /* Apply colors to basic elements */
 body {

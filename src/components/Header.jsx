@@ -17,11 +17,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <button className="header__toggle" onClick={toggleMenu}>
-        ☰
-      </button>
-      <a href="#home" className="header__link"><img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" /></a>
-      <span onClick={() => handleClick("/read")}>Read my book.</span>
+      <a href="#home" className="header__link">
+        <img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" className="header__image" />
+      </a>
       <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
         <ul className="header__menu">
           <li className="header__item"><span onClick={() => handleClick('/home')}>Home</span></li>
@@ -31,6 +29,9 @@ const Header = () => {
           <li className="header__item"><span onClick={() => handleClick('/contact')}>Contact</span></li>
         </ul>
       </nav>
+      <button className="header__toggle" onClick={toggleMenu}>
+        ☰
+      </button>
     </header>
   );
 };

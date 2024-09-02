@@ -5,18 +5,29 @@ import AuthorInfo from '../components/AuthorInfo';
 import Action from '../components/Action';
 import Footer from '../components/Footer';
 
-const Home = () => (
-  <>
-    <Header />
-    <main>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+// Import the background image
+import backgroundImage from './background2.png';  // Adjust the path based on your file structure
 
-        <BookDetails />
-      </div>
-      <AuthorInfo />
-    </main>
-    <Footer />
-  </>
-);
+const Home = () => {
+  return (
+    <div style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      minHeight: "100vh",
+      color: "#fff"
+    }}>
+      <Header />
+      <main >
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <BookDetails />
+        </div>
+        <AuthorInfo />
+      </main>
+      <Footer />
+    </div>
+  )
+};
 
 export default Home;
