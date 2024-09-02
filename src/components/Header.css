@@ -24,6 +24,9 @@
   }
   
   .header__nav {
+    position:absolute;
+    right:20px;
+    bottom:42px;
     display: flex;
     align-items: center;
   }

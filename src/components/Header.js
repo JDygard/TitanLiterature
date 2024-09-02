@@ -13,15 +13,20 @@ const Header = () => {
       <button className="header__toggle" onClick={toggleMenu}>
         ☰
       </button>
+      <a href="#home" className="header__link"><img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" /></a>
       <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
         <ul className="header__menu">
           <li className="header__item"><a href="#home" className="header__link">Home</a></li>
           <li className="header__item"><span className="header__bullet">•</span></li>
-          <li className="header__item"><a href="#about" className="header__link">About</a></li>
+          <li className="header__item"><a href="#contact" className="header__link">Books</a></li>
           <li className="header__item"><span className="header__bullet">•</span></li>
-          <li className="header__item"><a href="#contact" className="header__link">Contact</a></li>
+          <li className="header__item"><a href="#about" className="header__link">About</a></li>
+      
         </ul>
+        
       </nav>
+      
+      
     </header>
   );
 };
