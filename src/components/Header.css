@@ -27,6 +27,7 @@
   align-items: center;
   transform: translateY(-50px);
   font-size: 1.5rem;
+  margin-left:395px;
 }
 
 .header__menu {
@@ -50,7 +51,7 @@
 }
 
 .header__bullet {
-  color: #333;
+  color: #ffffff;
   font-size: 1em;
 }
 

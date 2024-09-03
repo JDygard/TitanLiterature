@@ -63,6 +63,10 @@ button:hover {
   margin-top: 0px;
   padding: 10px 20px;
 }
+.container {
+  display:flex;
+  flex-direction: column;
+}
 
 .row:after {
   content: "";

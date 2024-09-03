@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href="#home" className="header__link">
+      <span onClick={() => handleClick('/')}>
         <img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" className="header__image" />
-      </a>
+      </span>
       <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
         <ul className="header__menu">
           <li className="header__item"><span onClick={() => handleClick('/')}>Home</span></li>

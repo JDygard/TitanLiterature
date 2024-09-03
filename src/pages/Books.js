@@ -9,7 +9,7 @@ import backgroundImage from './background2.png';  // Adjust the path based on yo
 
 const Books = () => (
   <>
-  <div style={{
+  <div class="container" style={{
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
