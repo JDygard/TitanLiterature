@@ -22,11 +22,11 @@ const Header = () => {
       </a>
       <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
         <ul className="header__menu">
-          <li className="header__item"><span onClick={() => handleClick('/home')}>Home</span></li>
+          <li className="header__item"><span onClick={() => handleClick('/')}>Home</span></li>
           <li className="header__item"><span className="header__bullet">•</span></li>
           <li className="header__item"><span onClick={() => handleClick('/about')}>About</span></li>
           <li className="header__item"><span className="header__bullet">•</span></li>
-          <li className="header__item"><span onClick={() => handleClick('/contact')}>Contact</span></li>
+          <li className="header__item"><span onClick={() => handleClick('/books')}>Books</span></li>
         </ul>
       </nav>
       <button className="header__toggle" onClick={toggleMenu}>

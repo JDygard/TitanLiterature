@@ -4,7 +4,7 @@
     background-color: transparent;
     margin: 0 auto;
   }
-  
+
   .book-details__content {
     display: flex;
     flex-direction: row;
@@ -49,6 +49,10 @@
   
   .btn:hover {
     background-color: #0056b3;
+  }
+
+  .clickable {
+    cursor:pointer;
   }
   
   @media (max-width: 768px) {

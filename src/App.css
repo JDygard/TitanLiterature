@@ -23,7 +23,6 @@
 /* Apply colors to basic elements */
 body {
   margin: 0;
-  padding-bottom: 120px;
   font-family: 'Arial', sans-serif;
   background-color: var(--color-light-green);
   color: var(--color-dark-green);

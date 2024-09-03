@@ -11,9 +11,11 @@ const Read = () => {
 
     return (
         <div className="read-page">
+            {/*
             <header className="read-header">
                 <h1>Titan - Chapter 1</h1>
             </header>
+            */}
             <main className="pdf-container">
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                     <Viewer

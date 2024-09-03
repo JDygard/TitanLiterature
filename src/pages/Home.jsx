@@ -20,13 +20,11 @@ const Home = () => {
     }}>
       <Header />
       <main >
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          <BookDetails />
-        </div>
+        <BookDetails />
         <AuthorInfo />
       </main>
       <Footer />
-    </div>
+  </div>
   )
 };
 

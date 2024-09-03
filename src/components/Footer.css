@@ -4,8 +4,8 @@
     color: white;
     padding-top: 10px;
     padding-bottom: 20px;
+    position: flex;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100vw;
   }
@@ -40,6 +40,7 @@
   
   .footer__section ul li {
     margin-bottom: 8px;
+    margin-left: 10px;
   }
   
   .footer__section ul li a {
@@ -88,7 +89,7 @@
     }
   
     .footer__copy {
-      text-align: right;
+      text-align: left;
     }
   }
   
