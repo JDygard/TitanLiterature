@@ -9,6 +9,11 @@ const BookDetails = () => {
   const handleClick = (path) => { // and when someone clicks on the button
     navigate(path); // we navigate to the path defined
   };
+  const openInNewTab = (url) => { // same as handleClick but opens the link in a new tab
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
+
   return (
   <section id="book-details" className="book-details">
     <div className="book-details__content">
@@ -23,7 +28,7 @@ const BookDetails = () => {
           place than he was raised to believe-- and nothing could prepare him to face off against cosmic horrors from other worlds and the inconvenience of adolescent love, 
           which sometimes go hand in hand.
         </p>
-        <h4 class="clickable" onClick={() => handleClick('/read')}>Read the first chapter</h4>
+        <h4 class="clickable" onClick={() => openInNewTab('/read')}>Read the first chapter</h4>
       </div>
       <div className="book-details__image">
         <img width="250px" src="images/bookcover_placeholder.png" alt="Children of Nemia" />

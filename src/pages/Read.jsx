@@ -21,6 +21,8 @@ const Read = () => {
                     <Viewer
                         fileUrl={file}
                         plugins={[defaultLayoutPluginInstance]}
+                        viewMode='DualPage'
+                        defaultScale={1.5}
                     />
                 </Worker>
             </main>
