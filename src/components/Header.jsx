@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import MailerScript from '/MailerScript';
 import "./Header.css";
 
 const Header = () => {
@@ -16,6 +17,7 @@ const Header = () => {
   };
 
   return (
+    
     <header className="header">
       <span onClick={() => handleClick('/')}>
         <img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" className="header__image" />
@@ -29,6 +31,10 @@ const Header = () => {
           <li className="header__item"><span onClick={() => handleClick('/books')}>Books</span></li>
         </ul>
       </nav>
+      {/* newsletter form begins */}
+      <MailerScript />
+      <div class="ml-embedded" data-form="eWh0qw"></div>
+      {/* newsletter form begins */}
       <button className="header__toggle" onClick={toggleMenu}>
         ☰
       </button>
