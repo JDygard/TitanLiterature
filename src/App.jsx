@@ -17,7 +17,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/books" element={<Books />} />
         <Route path="/read" element={<Read />} />
-
       </Routes>
     </Router>
   );

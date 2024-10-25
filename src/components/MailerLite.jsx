@@ -38,56 +38,47 @@ const MailerLite = () => {
 
   return (
     <div className="header__item">
-      <form 
+      <form
         id="subscription-form"
         onSubmit={(e) => {
           e.preventDefault();
           const data = new FormData(e.target);
-          console.log(data)
+          console.log(data);
           subscribeUser(data);
         }}
-        style={{
-          display: 'flex',
-          gap: '8px',
-          alignItems: 'center'
-        }}
+        className="subscription-form"
       >
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Enter your email" 
-          required 
-          style={{
-            padding: '8px',
-            borderRadius: '4px',
-            border: '1px solid #ccc'
-          }}
+        <label htmlFor="email" className="subscription-form__label">
+          Email
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+          className="subscription-form__input"
         />
-        <button 
-          type="submit" 
+        <input type="hidden" name="status" value="unconfirmed" />
+        <button
+          type="submit"
           disabled={isLoading}
-          style={{
-            padding: '8px 16px',
-            borderRadius: '4px',
-            border: 'none',
-            backgroundColor: '#007bff',
-            color: 'white',
-            cursor: isLoading ? 'not-allowed' : 'pointer'
-          }}
+          className={`subscription-form__button ${isLoading ? 'disabled' : ''}`}
         >
           {isLoading ? 'Subscribing...' : 'Subscribe'}
         </button>
       </form>
       {subscriptionStatus && (
-        <p style={{
-          marginTop: '8px',
-          color: subscriptionStatus.includes('Error') ? '#dc3545' : '#28a745'
-        }}>
+        <p
+          className={`subscription-form__status ${
+            subscriptionStatus.includes('Error') ? 'error' : 'success'
+          }`}
+        >
           {subscriptionStatus}
         </p>
       )}
     </div>
-  );
+  );  
 };
 
 export default MailerLite;
