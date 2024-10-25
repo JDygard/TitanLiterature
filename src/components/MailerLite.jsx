@@ -63,6 +63,11 @@ const MailerLite = () => {
             border: '1px solid #ccc'
           }}
         />
+        <input 
+          type="hidden" 
+          name="status" 
+          value="uncomfirmed"
+        />
         <button 
           type="submit" 
           disabled={isLoading}
