@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-import MailerScript from '/MailerScript';
 import "./Header.css";
 
 const Header = () => {
@@ -32,7 +31,6 @@ const Header = () => {
         </ul>
       </nav>
       {/* newsletter form begins */}
-      <MailerScript />
       <div class="ml-embedded" data-form="eWh0qw"></div>
       {/* newsletter form begins */}
       <button className="header__toggle" onClick={toggleMenu}>

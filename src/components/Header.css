@@ -23,6 +23,7 @@
 .header__nav {
   flex-grow: 1;
   display: flex;
+  color:#333;
   justify-content: center;
   align-items: center;
   transform: translateY(-50px);
@@ -51,7 +52,7 @@
 }
 
 .header__bullet {
-  color: #ffffff;
+  color: #333;
   font-size: 1em;
 }
 
@@ -67,7 +68,7 @@
 
   .header__nav {
     width: 100%;
-    background-color: white;
+    background-color: #333;
     flex-direction: column;
     align-items: flex-start;
     display: none;

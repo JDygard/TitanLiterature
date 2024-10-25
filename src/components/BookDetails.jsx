@@ -18,17 +18,17 @@ const BookDetails = () => {
   <section id="book-details" className="book-details">
     <div className="book-details__content">
       <div className="book-details__text">
-        <h3 className="book-details__title">
+        <h3 className="section_title">
           The debut novel of the Titan Chronology, “Children of Nemia” is available today
         </h3>
         {/* <a href="#purchase" className="btn btn-primary">Buy Now</a> */}
-        <p className="book-details__description"> 
+        <p className="body_text"> 
           Van is about to leave home on the journey of his lifetime. The pilgrimage marks a Nemian's coming of age
           and Van's been preparing for it since the day he was born, but he's about to learn the world is a much bigger 
           place than he was raised to believe-- and nothing could prepare him to face off against cosmic horrors from other worlds and the inconvenience of adolescent love, 
           which sometimes go hand in hand.
         </p>
-        <h4 class="clickable" onClick={() => openInNewTab('/read')}>Read the first chapter</h4>
+        <h3><a href="/read" target="_blank" rel="noopener noreferrer">Read the first chapter</a></h3>
       </div>
       <div className="book-details__image">
         <img width="250px" src="images/bookcover_placeholder.png" alt="Children of Nemia" />

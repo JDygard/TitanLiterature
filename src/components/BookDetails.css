@@ -21,12 +21,10 @@
   .book-details__title {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #333;
   }
   
   .book-details__description {
     font-size: 1em;
-    color: #2d2d2d;
     line-height: 1.6;
   }
   
@@ -39,22 +37,19 @@
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
     text-decoration: none;
     border-radius: 4px;
     margin-top: 10px;
     transition: background-color 0.3s ease;
   }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
 
   .clickable {
     cursor:pointer;
+    color: var(--color-darker-green);
   }
-  
+  .clickable a:hover {
+    color: var(--color-medium-green);
+  }
   @media (max-width: 768px) {
     .book-details__content {
       flex-direction: column;

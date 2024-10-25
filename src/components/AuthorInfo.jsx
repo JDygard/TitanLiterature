@@ -10,7 +10,7 @@ const AuthorInfo = () => (
           He grew up inspired by legends of sci-fi & fantasy storytelling like Philip K. Dick and Garth Nix, and credits his motivation to share his own stories
           to a lifelong love affair with tabletop role-playing games.
         </p>
-        <h3 className="author-info__title">
+        <h3 className="section_title">
           Creative storytelling can and should be a collaboration – 
           <a href="https://discord.gg/DfyfVfcgtV" target="_blank" rel="noopener noreferrer"> join the conversation today</a>
         </h3>

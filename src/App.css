@@ -33,21 +33,16 @@ span {
 }
 
 a {
-  color: var(--color-medium-green);
+  color: var(--color-darker-green);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-darker-green);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-dark-green);
+  color: var(--color-medium-green);
 }
 
 button {
   background-color: var(--color-medium-green);
-  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -60,8 +55,14 @@ button:hover {
 
 /* mogo's design styles */
 .body_text {
-  margin-top: 0px;
-  padding: 10px 20px;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+.section_title {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
 }
 .container {
   display:flex;
