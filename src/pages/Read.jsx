@@ -4,6 +4,8 @@ import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import './Read.css';
+console.error("This is our code, which means the route works. What it isn't finding is the pdf file or the plugin instance.");
+
 const Read = () => {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
     const file = "/book.pdf"

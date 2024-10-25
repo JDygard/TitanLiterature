@@ -1,22 +1,47 @@
 /* Container styles */
-.subscription-form {
+.where-are-you-now {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  /* Form styling */
+  .subscription-form {
     display: flex;
     gap: 8px;
     align-items: center;
+    justify-content: center;
+  }
+  
+  /* Div wrapping label and input */
+  .form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
   }
   
   /* Label for email input */
   .subscription-form__label {
-    font-size: 14px;
-    font-weight: 500;
-    margin-right: 8px;
+    font-size: 13px;
+    position: absolute;
+    top: -1px;
+    left: 90px;
+    background: white;
+    padding: 0 8px;
+    border-radius: 5px;
+    color: #777;
+    border: 1px solid #777;
   }
   
   /* Input field styling */
   .subscription-form__input {
-    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #777;
+    margin-top: 8px;
   }
   
   /* Button styling */
@@ -24,9 +49,12 @@
     padding: 8px 16px;
     border-radius: 4px;
     border: none;
-    background-color: #007bff;
+    background-color: #007bff !important;
     color: white;
     cursor: pointer;
+    margin-left: 8px;
+    margin-top: 7px;
+    white-space: nowrap;
   }
   
   /* Disabled button styling */
@@ -38,6 +66,7 @@
   /* Status message styling */
   .subscription-form__status {
     margin-top: 8px;
+    text-align: center;
   }
   
   .subscription-form__status.success {
@@ -46,5 +75,20 @@
   
   .subscription-form__status.error {
     color: #dc3545;
+  }
+  
+  /* Responsive styling for narrow screens */
+  @media (max-width: 600px) {
+    .subscription-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .subscription-form__button {
+      margin-left: 0;
+      margin-top: 8px;
+      width: 100%;
+      max-width: 300px;
+    }
   }
   

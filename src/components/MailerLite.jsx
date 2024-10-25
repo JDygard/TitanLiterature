@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './MailerLite.css';
 
 const MailerLite = () => {
   const [subscriptionStatus, setSubscriptionStatus] = useState('');
@@ -37,7 +38,7 @@ const MailerLite = () => {
   };
 
   return (
-    <div className="header__item">
+    <div className="where-are-you-now">
       <form
         id="subscription-form"
         onSubmit={(e) => {
@@ -48,37 +49,38 @@ const MailerLite = () => {
         }}
         className="subscription-form"
       >
-        <label htmlFor="email" className="subscription-form__label">
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          required
-          className="subscription-form__input"
-        />
-        <input type="hidden" name="status" value="unconfirmed" />
+        <div className="form-div">
+
+          <label htmlFor="email" className="subscription-form__label">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            className="subscription-form__input"
+          />
+        </div>
         <button
           type="submit"
           disabled={isLoading}
           className={`subscription-form__button ${isLoading ? 'disabled' : ''}`}
         >
-          {isLoading ? 'Subscribing...' : 'Subscribe'}
+          {isLoading ? 'Signing up...' : 'Sign up'}
+          <input type="hidden" name="status" value="unconfirmed" />
         </button>
       </form>
       {subscriptionStatus && (
         <p
-          className={`subscription-form__status ${
-            subscriptionStatus.includes('Error') ? 'error' : 'success'
-          }`}
+          className={`subscription-form__status ${subscriptionStatus.includes('Error') ? 'error' : 'success'
+            }`}
         >
           {subscriptionStatus}
         </p>
       )}
     </div>
-  );  
+  );
 };
 
 export default MailerLite;
