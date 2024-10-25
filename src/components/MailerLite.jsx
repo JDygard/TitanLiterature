@@ -15,9 +15,8 @@ const MailerLite = () => {
         },
         body: JSON.stringify({
           email: email.get('email'),
-          status: email.get('status'),
+          status: "unconfirmed",
           groups: ["136114632182990219"], // Correct format for groups
-          status: 'active'
         })
       });
 
@@ -63,11 +62,6 @@ const MailerLite = () => {
             borderRadius: '4px',
             border: '1px solid #ccc'
           }}
-        />
-        <input 
-          type="hidden" 
-          name="status" 
-          value="uncomfirmed"
         />
         <button 
           type="submit" 
