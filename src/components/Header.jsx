@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import "./Header.css";
+import MailerLite from './MailerLite';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,11 +29,9 @@ const Header = () => {
           <li className="header__item"><span onClick={() => handleClick('/about')}>About</span></li>
           <li className="header__item"><span className="header__bullet">•</span></li>
           <li className="header__item"><span onClick={() => handleClick('/books')}>Books</span></li>
+          <li classname="header_item"><MailerLite /></li>
         </ul>
       </nav>
-      {/* newsletter form begins */}
-      <div class="ml-embedded" data-form="eWh0qw"></div>
-      {/* newsletter form begins */}
       <button className="header__toggle" onClick={toggleMenu}>
         ☰
       </button>
