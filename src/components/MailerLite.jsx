@@ -38,7 +38,10 @@ const MailerLite = () => {
   };
 
   return (
+    
     <div className="where-are-you-now">
+      <div class="newsletter-text">Join our mailing list today for an exclusive look at the first chapter of the newest entry in the series. 
+      Be the first to hear about all new releases, special offers, and upcoming events.</div>
       <form
         id="subscription-form"
         onSubmit={(e) => {
@@ -79,7 +82,9 @@ const MailerLite = () => {
           {subscriptionStatus}
         </p>
       )}
+      
     </div>
+    
   );
 };
 

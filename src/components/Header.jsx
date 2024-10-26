@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import "./Header.css";
-// import MailerLite from './MailerLite';
+import MailerLite from '../components/MailerLite';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,9 +19,13 @@ const Header = () => {
   return (
     
     <header className="header">
+      <div class ="header_container">
+        <div class ="logo">
       <span onClick={() => handleClick('/')}>
         <img height="100px" src="images/banner1.png" alt="Titan by Michael Goe" className="header__image" />
       </span>
+      </div>
+      
       <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
         <ul className="header__menu">
           <li className="header__item"><span onClick={() => handleClick('/')}>Home</span></li>
@@ -35,6 +39,8 @@ const Header = () => {
       <button className="header__toggle" onClick={toggleMenu}>
         ☰
       </button>
+      
+      </div>
     </header>
   );
 };

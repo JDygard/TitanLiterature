@@ -20,8 +20,8 @@ const Home = () => {
     }}>
       <Header />
       <main >
-        <BookDetails />
         <MailerLite />
+        <BookDetails />
         <AuthorInfo />
       </main>
       <Footer />

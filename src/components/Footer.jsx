@@ -21,7 +21,6 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__section footer__social">
-        <h3>Social</h3>
         <ul>
           <li><a href="https://discord.gg/DfyfVfcgtV" target="blank"><img height="35px" src="images/discord_white_small.png" alt="Official Discord" /></a></li>
           <li><a href="https://www.facebook.com/people/Michael-Goe/61565446521984/" target="blank"><img height="35px" src="images/fb_white_small.png" alt="Author Page" /></a></li>
