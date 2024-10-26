@@ -16,6 +16,7 @@
   .book-details__text {
     flex: 1;
     padding-right: 80px;
+    margin-bottom: 20px;
   }
   
   .book-details__title {
@@ -54,10 +55,6 @@
     .book-details__content {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .book-details__text {
-      margin-bottom: 20px;
     }
   }
   

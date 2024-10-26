@@ -54,13 +54,14 @@ const MailerLite = () => {
       >
         <div className="form-div">
 
-          <label htmlFor="email" className="subscription-form__label">
+          {/* <label htmlFor="email" className="subscription-form__label">
             Email
-          </label>
+          </label> */}
           <input
             type="email"
             name="email"
             id="email"
+            placeholder="Enter your email"
             required
             className="subscription-form__input"
           />
